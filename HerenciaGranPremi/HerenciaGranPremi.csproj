@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0E760EE-0933-4A29-B795-02452463D7CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HerenciaGranPremi</RootNamespace>
+    <AssemblyName>HerenciaGranPremi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\escuderia.cs" />
+    <Compile Include="Clases\granPremi.cs" />
+    <Compile Include="Clases\mecanic.cs" />
+    <Compile Include="Clases\persona.cs" />
+    <Compile Include="Clases\pilot.cs" />
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FAfegirEscuderia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FAfegirEscuderia.Designer.cs">
+      <DependentUpon>FAfegirEscuderia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FEliminaEscuderia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FEliminaEscuderia.Designer.cs">
+      <DependentUpon>FEliminaEscuderia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FModificarEscuderia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FModificarEscuderia.Designer.cs">
+      <DependentUpon>FModificarEscuderia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FMostrarEscuderia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisEscuderia\FMostrarEscuderia.Designer.cs">
+      <DependentUpon>FMostrarEscuderia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FAfegirGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FAfegirGP.Designer.cs">
+      <DependentUpon>FAfegirGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FEliminarGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FEliminarGP.Designer.cs">
+      <DependentUpon>FEliminarGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FModificarGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FModificarGP.Designer.cs">
+      <DependentUpon>FModificarGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FMostrarGP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisGranPremi\FMostrarGP.Designer.cs">
+      <DependentUpon>FMostrarGP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisMecanic\FAfegirMecanic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisMecanic\FAfegirMecanic.Designer.cs">
+      <DependentUpon>FAfegirMecanic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisMecanic\FEliminarMecanics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisMecanic\FEliminarMecanics.Designer.cs">
+      <DependentUpon>FEliminarMecanics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisMecanic\FModificarMecanics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisMecanic\FModificarMecanics.Designer.cs">
+      <DependentUpon>FModificarMecanics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisMecanic\FMostraMecanics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisMecanic\FMostraMecanics.Designer.cs">
+      <DependentUpon>FMostraMecanics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilot\FAfegirPilot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilot\FAfegirPilot.Designer.cs">
+      <DependentUpon>FAfegirPilot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilot\FEliminarPilots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilot\FEliminarPilots.Designer.cs">
+      <DependentUpon>FEliminarPilots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilot\FModificaPilot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilot\FModificaPilot.Designer.cs">
+      <DependentUpon>FModificaPilot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularisPilot\FMostraPilots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularisPilot\FMostraPilots.Designer.cs">
+      <DependentUpon>FMostraPilots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisEscuderia\FAfegirEscuderia.resx">
+      <DependentUpon>FAfegirEscuderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisEscuderia\FEliminaEscuderia.resx">
+      <DependentUpon>FEliminaEscuderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisEscuderia\FModificarEscuderia.resx">
+      <DependentUpon>FModificarEscuderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisEscuderia\FMostrarEscuderia.resx">
+      <DependentUpon>FMostrarEscuderia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisGranPremi\FAfegirGP.resx">
+      <DependentUpon>FAfegirGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisGranPremi\FEliminarGP.resx">
+      <DependentUpon>FEliminarGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisGranPremi\FModificarGP.resx">
+      <DependentUpon>FModificarGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisGranPremi\FMostrarGP.resx">
+      <DependentUpon>FMostrarGP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisMecanic\FAfegirMecanic.resx">
+      <DependentUpon>FAfegirMecanic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisMecanic\FEliminarMecanics.resx">
+      <DependentUpon>FEliminarMecanics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisMecanic\FModificarMecanics.resx">
+      <DependentUpon>FModificarMecanics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisMecanic\FMostraMecanics.resx">
+      <DependentUpon>FMostraMecanics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilot\FAfegirPilot.resx">
+      <DependentUpon>FAfegirPilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilot\FEliminarPilots.resx">
+      <DependentUpon>FEliminarPilots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilot\FModificaPilot.resx">
+      <DependentUpon>FModificaPilot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularisPilot\FMostraPilots.resx">
+      <DependentUpon>FMostraPilots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
