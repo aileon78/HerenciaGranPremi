@@ -110,6 +110,7 @@
             this.BTornar.TabIndex = 40;
             this.BTornar.Text = "&Tornar";
             this.BTornar.UseVisualStyleBackColor = true;
+            this.BTornar.Click += new System.EventHandler(this.BTornar_Click);
             // 
             // BEliminaMecanic
             // 
@@ -148,6 +149,7 @@
             this.Controls.Add(this.BEliminaMecanic);
             this.Name = "FEliminarMecanics";
             this.Text = "FEliminarMecanics";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FEliminarMecanics_FormClosed);
             this.Load += new System.EventHandler(this.FEliminarMecanics_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

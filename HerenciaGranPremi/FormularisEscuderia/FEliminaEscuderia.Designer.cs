@@ -62,6 +62,7 @@
             // LBMotor
             // 
             this.LBMotor.AutoSize = true;
+            this.LBMotor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBMotor.Location = new System.Drawing.Point(153, 171);
             this.LBMotor.Name = "LBMotor";
             this.LBMotor.Size = new System.Drawing.Size(13, 13);
@@ -72,6 +73,7 @@
             // LBAny
             // 
             this.LBAny.AutoSize = true;
+            this.LBAny.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBAny.Location = new System.Drawing.Point(153, 108);
             this.LBAny.Name = "LBAny";
             this.LBAny.Size = new System.Drawing.Size(10, 13);
@@ -90,6 +92,7 @@
             // LBPais
             // 
             this.LBPais.AutoSize = true;
+            this.LBPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBPais.Location = new System.Drawing.Point(8, 171);
             this.LBPais.Name = "LBPais";
             this.LBPais.Size = new System.Drawing.Size(13, 13);
@@ -100,6 +103,7 @@
             // LBEscuderia
             // 
             this.LBEscuderia.AutoSize = true;
+            this.LBEscuderia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBEscuderia.Location = new System.Drawing.Point(8, 108);
             this.LBEscuderia.Name = "LBEscuderia";
             this.LBEscuderia.Size = new System.Drawing.Size(13, 13);
@@ -132,6 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.BBusca);
             this.Controls.Add(this.label5);
@@ -142,7 +147,9 @@
             this.Controls.Add(this.LBEscuderia);
             this.Controls.Add(this.BTornar);
             this.Controls.Add(this.BElimina);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FEliminaEscuderia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEliminaEscuderia";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FEliminaEscuderia_FormClosed);
             this.ResumeLayout(false);

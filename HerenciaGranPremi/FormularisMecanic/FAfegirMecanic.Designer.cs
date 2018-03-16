@@ -142,6 +142,7 @@
             this.BTTorna.TabIndex = 21;
             this.BTTorna.Text = "&Torna";
             this.BTTorna.UseVisualStyleBackColor = true;
+            this.BTTorna.Click += new System.EventHandler(this.BTTorna_Click);
             // 
             // FAfegirMecanic
             // 
@@ -162,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FAfegirMecanic";
             this.Text = "FAfegirMecanic";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FAfegirMecanic_FormClosed);
             this.Load += new System.EventHandler(this.FAfegirMecanic_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

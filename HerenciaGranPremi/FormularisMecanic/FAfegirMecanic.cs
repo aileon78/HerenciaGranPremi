@@ -77,5 +77,23 @@ namespace HerenciaGranPremi.FormularisMecanic
             CBEscuderia.Text = esc[0].Nom;
 
         }
+
+
+        public void torna()
+        {
+
+            this.Close();
+
+        }
+        private void BTTorna_Click(object sender, EventArgs e)
+        {
+            torna();
+        }
+
+        private void FAfegirMecanic_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal f = new FormPrincipal();
+            f.Show();
+        }
     }
 }

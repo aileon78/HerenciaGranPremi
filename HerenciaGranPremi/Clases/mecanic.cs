@@ -71,7 +71,7 @@ namespace HerenciaGranPremi.Clases
 
             mecanic m1 = new mecanic();
 
-            // llegim tots els pilots
+            // llegim tots els pilots y los contamos, devolvemos el vector de mecanicos
             return m1.contaPersones(llegeixMecanicFitxer());
 
 
@@ -189,7 +189,7 @@ namespace HerenciaGranPremi.Clases
         /// Modifica un pilot a partir de l'objecte d'aquest pilot
         /// </summary>
         /// <param name="pilotAModificar">Objecte pilot a modificar</param>
-        public void modificarPilot(mecanic mecanicAModificar)
+        public void modificarMecanic(mecanic mecanicAModificar)
         {
             // Eliminem el pilot (com que ja l'hem trobat abans,
             // podem dir que està al fitxer

@@ -66,20 +66,20 @@ namespace HerenciaGranPremi.FormularisEscuderia
 
 
             // Introduïm en els labels si existeix la escuderia que hem buscat
-            if (esc == null)
-            {
-                buidaLabels();
-                BElimina.Enabled = false;
-                MessageBox.Show("No existeix la escuderia: " + nom_esc, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            else
+            if (esc != null)
             {
                 LBEscuderia.Text = esc.Nom;
                 LBMotor.Text = esc.Motor;
                 LBPais.Text = esc.Pais;
-                LBAny.Text = Convert.ToString(esc.Any_fundacio);
+                LBAny.Text = "( Any: "+Convert.ToString(esc.Any_fundacio)+ ")";
                 BElimina.Enabled = true;
+            }
+            else
+            {
+             //   buidaLabels();
+                MessageBox.Show("No existeix la escuderia: " + nom_esc, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                BElimina.Enabled = false;
+
             }
         }
 
@@ -101,37 +101,46 @@ namespace HerenciaGranPremi.FormularisEscuderia
 
         private void BElimina_Click(object sender, EventArgs e)
         {
-            if (LBEscuderia.Text != ":")
+            if (!LBEscuderia.Text.Equals(":"))
             {
-                /////////////////////////
-                /// FORMA 1. ELIMINA A PARTIR DEL NOM DE L'ESCUDERIA
-                //escuderia esc = new escuderia();
-                //esc.eliminaEscuderia(LBEscuderia.Text);
+                ///////////////////////////
+                ///// FORMA 1. ELIMINA A PARTIR DEL NOM DE L'ESCUDERIA
+                escuderia esc = new escuderia();
+                esc.eliminaEscuderia(LBEscuderia.Text);
 
-                /////////////////////////
-
-                //// FORMA 2. ELIMINAR A PARTIR DE L'OBJECTE //
-                ////CONSTRUÏM OBJECTE
-                String escuderi, pais, motor;
-                int any;
-
-                //recollim les dades
-                escuderi = LBEscuderia.Text;
-                pais = LBPais.Text;
-                motor = LBMotor.Text;
-                any = Convert.ToInt32(LBAny.Text);
-
-
-                // construïm l'objecte
-                escuderia es = new escuderia(escuderi, pais, any, motor);
-
-
-                // eliminem l'objecte
-                es.eliminaEscuderia();
-
-
-                // tornem les labels a la situació inicial
+                //finalment buidem labels
                 buidaLabels();
+
+                ///////////////////////////
+
+                ////// FORMA 2. ELIMINAR A PARTIR DE L'OBJECTE //
+                //////CONSTRUÏM OBJECTE
+                //String escuderi, pais, motor;
+                //int any;
+
+                ////recollim les dades
+                //escuderi = LBEscuderia.Text;
+                //pais = LBPais.Text;
+                //motor = LBMotor.Text;
+                //any = Convert.ToInt32(LBAny.Text);
+
+
+                //// construïm l'objecte
+                //escuderia es = new escuderia(escuderi, pais, any, motor);
+
+
+                //// eliminem l'objecte
+                //es.eliminaEscuderia();
+
+
+                //// tornem les labels a la situació inicial
+                //buidaLabels();
+
+               
+
+             
+
+
             }
         }
 

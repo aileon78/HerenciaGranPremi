@@ -50,5 +50,11 @@ namespace HerenciaGranPremi.FormularisMecanic
                 i++;
             } while (m[i] != null);
         }
+
+        private void FMostraMecanics_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal f = new FormPrincipal();
+            f.Show();
+        }
     }
 }

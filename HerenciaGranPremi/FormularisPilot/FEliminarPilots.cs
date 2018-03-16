@@ -42,13 +42,13 @@ namespace HerenciaGranPremi.FormularisPilot
             p = p.cercarPilot(nom_pilot);
 
 
-            // Introduïm en els labels si existeix la escuderia que hem buscat
+            // Introduïm en els labels si existeix la pilot que hem buscat
             if (p != null)
             {
                 LBEscuderia.Text = p.Nom;
                 LBNom.Text = p.Nom;
                 LBPais.Text = p.Nacionalitat;
-                LBDorsal.Text = "( " + Convert.ToString(p.Dorsal) + " )";
+                LBDorsal.Text = "( Dorsal:  " + Convert.ToString(p.Dorsal) + " )";
                 BElimina.Enabled = true;
             }
             else

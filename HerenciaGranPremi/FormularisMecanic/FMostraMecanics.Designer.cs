@@ -61,6 +61,7 @@
             this.Controls.Add(this.BTorna);
             this.Name = "FMostraMecanics";
             this.Text = "FMostraMecanics";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FMostraMecanics_FormClosed);
             this.Load += new System.EventHandler(this.FMostraMecanics_Load);
             this.ResumeLayout(false);
 

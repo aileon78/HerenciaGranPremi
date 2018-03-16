@@ -135,14 +135,14 @@ namespace HerenciaGranPremi.Clases
                     {
                         //p[i].afegeixPilotFitxer(fitxer, false);   // generem fitxer nou
 
-                        p[i].afegeixPersonaArxiu("fitxers/pilots", false);   // generem fitxer nou
+                        p[i].afegeixPersonaArxiu("fitxers/pilots.dat", false);   // generem fitxer nou
 
                     }
                     else
                     {
                         //p[i].afegeixPilotFitxer(fitxer, true);    // afegim al fitxer
 
-                        p[i].afegeixPersonaArxiu("fitxers/pilots", true);   // afegim al fitxer nou
+                        p[i].afegeixPersonaArxiu("fitxers/pilots.dat", true);   // afegim al fitxer nou
                     }
                     j++;
                 }

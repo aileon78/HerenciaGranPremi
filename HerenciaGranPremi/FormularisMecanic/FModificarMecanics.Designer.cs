@@ -71,6 +71,7 @@
             this.BUltim.TabIndex = 57;
             this.BUltim.Text = ">>";
             this.BUltim.UseVisualStyleBackColor = true;
+            this.BUltim.Click += new System.EventHandler(this.BUltim_Click);
             // 
             // BSeguent
             // 
@@ -80,6 +81,7 @@
             this.BSeguent.TabIndex = 56;
             this.BSeguent.Text = ">";
             this.BSeguent.UseVisualStyleBackColor = true;
+            this.BSeguent.Click += new System.EventHandler(this.BSeguent_Click);
             // 
             // BAnterior
             // 
@@ -89,6 +91,7 @@
             this.BAnterior.TabIndex = 55;
             this.BAnterior.Text = "<";
             this.BAnterior.UseVisualStyleBackColor = true;
+            this.BAnterior.Click += new System.EventHandler(this.BAnterior_Click);
             // 
             // BPrimer
             // 
@@ -98,6 +101,7 @@
             this.BPrimer.TabIndex = 54;
             this.BPrimer.Text = "<<";
             this.BPrimer.UseVisualStyleBackColor = true;
+            this.BPrimer.Click += new System.EventHandler(this.BPrimer_Click);
             // 
             // BTorna
             // 
@@ -107,6 +111,7 @@
             this.BTorna.TabIndex = 53;
             this.BTorna.Text = "&Torna";
             this.BTorna.UseVisualStyleBackColor = true;
+            this.BTorna.Click += new System.EventHandler(this.BTorna_Click);
             // 
             // CBEscuderia
             // 
@@ -208,6 +213,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FModificarMecanics";
             this.Text = "FModificarMecanics";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FModificarMecanics_FormClosed);
             this.Load += new System.EventHandler(this.FModificarMecanics_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

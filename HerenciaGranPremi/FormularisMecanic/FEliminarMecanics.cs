@@ -68,5 +68,25 @@ namespace HerenciaGranPremi.FormularisMecanic
         {
 
         }
+
+
+
+
+
+        private void BTornar_Click(object sender, EventArgs e)
+        {
+            torna();
+        }
+
+        private void torna()
+        {
+            this.Close();
+        }
+
+        private void FEliminarMecanics_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal f = new FormPrincipal();
+            f.Show();
+        }
     }
 }

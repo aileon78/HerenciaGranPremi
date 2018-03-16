@@ -148,14 +148,6 @@ namespace HerenciaGranPremi.FormularisPilot
         }
 
 
-        private void torna()
-        {
-            this.Close();
-        }
-        private void BTorna_Click(object sender, EventArgs e)
-        {
-            torna();
-        }
 
         private void CBEscuderia_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -219,6 +211,20 @@ namespace HerenciaGranPremi.FormularisPilot
             numPilot = 0;
             carregaTextBox();
             Botonera();
+        }
+
+        private void torna()
+        {
+            this.Close();
+        }
+        private void BTorna_Click(object sender, EventArgs e)
+        {
+            torna();
+        }
+        private void FModificaPilot_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormPrincipal f = new FormPrincipal();
+            f.Show();
         }
     }
 }

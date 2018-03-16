@@ -200,6 +200,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FModificaPilot";
             this.Text = "ModificaPilot";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FModificaPilot_FormClosed);
             this.Load += new System.EventHandler(this.FModificaPilot_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
